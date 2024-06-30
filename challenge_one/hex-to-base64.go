@@ -14,7 +14,7 @@ func HexToBase64(hex string) (string, error) {
 	}
 	s := encodeBase64(b)
 	fmt.Printf("successfully encoded base64: %s", s)
-	return "", nil
+	return s, nil
 }
 
 func decodeHex(input string) ([]byte, error) {
